@@ -1,0 +1,469 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 200%;
+}
+ul{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Standard formatting */
+
+p, h2, h3{
+    margin:10px 45px;
+    padding:5px;
+}
+iframe{
+    height:315px;
+    width:560px;
+    position:relative;
+    border:10px solid #000; 
+}
+h1, h2, h3{
+    font-family:'PT Sans Caption',sans-serif;
+    font-weight: bold;
+    
+}
+
+p, ol, main ul{
+    font-family: 'PT Serif', serif;
+}
+
+h1{
+    font-size: 22px;
+    text-decoration: underline;
+}
+h2{
+    font-size: 15px;
+}
+h3{
+    font-size:12px;
+}
+
+a{
+    text-decoration:none;
+    color:#900;
+    text-shadow: 1px 0px rgba(0,0,0,0.75);
+}
+a:hover{
+    color:#ee4433;
+}
+
+#container{
+    width:960px;
+    min-height:100%;
+    margin: auto;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    position:relative;
+	
+}
+
+/*#container img{
+    z-index: 1;
+}
+*/
+.flag{
+    width:100%;
+    height:202px;
+    position: absolute;
+    border-right: 3px solid #000000;
+    border-left: 3px solid #000000;
+    color:#999999;
+    text-align: center;
+    line-height: 200px;
+    float:left;
+    z-index: 0;
+    
+    
+}
+.flag h2,.flag h3{
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-shadow:2px 2px 5px #fff;
+    font-weight: normal;
+}
+.flag h2{
+    font-size:150px;
+}
+.flag h3{
+    font-size:50px;
+}
+.black{
+    background-color:#000000;
+    border-radius: 5px 5px 0px 0px;
+    border-top:  3px solid #000000;
+    
+}
+.red{
+    background-color: rgba(140,0,26,1);
+    top:205px;
+    
+}
+.yellow{
+    top:407px;
+    background-color:rgba(227, 204, 65, 1);
+    border-radius: 0px 0px 5px 5px;
+    border-bottom:  3px solid #000000;
+    
+}
+
+body{
+    background-image:url(../images/Wallpaper.jpg);
+    background-size: 920px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+
+#container a div.black:hover{
+    background-color: rgba(0,0,0,0.5);
+    color:#000;
+}
+#container a div.red:hover{
+    background-color: rgba(255,0,0,0.5);
+    color:#000;
+}
+#container a div.yellow:hover{
+    background-color: rgba(255,255,0,0.5);
+    color:#000;
+}
+#footer li{
+    float:left;
+    border-right: 2px solid #aaaaaa;
+    padding: 0 5px;
+    list-style: none;
+    
+    
+}
+#footer a{
+    text-decoration:none;
+    color:#aaaaaa;
+}
+#footer a:hover{
+    color:#ffffff;
+}
+#footer{
+    border-top: 4px solid rgba(255,0,0,0.8);
+    font-family:'PT Sans Caption',sans-serif;
+    font-size:12px;
+    background-color: rgba(0,0,0,0.8);
+    height:40px;
+    margin 5px;
+    padding: 20px 0px 0px 10px;
+    color:#aaaaaa;
+    }
+#menubar{
+    width:100%;
+    background-color: rgba(0,0,0,0.6);
+    text-align:right;
+    height:50px;
+    line-height: 50px;
+    color:#bbb;
+}
+
+#menubar li{
+    display:table-cell;
+    width:200px;
+    text-align: center;
+    vertical-align: middle;
+    color:#888;
+    
+
+}
+#menubar li:hover{
+    background-color:rgba(255,255,255,0.6);
+    color:#000;
+    border-right: 3px solid rgba(200,0,0,0.8);
+}
+
+#header{
+    border-bottom: 2px solid;
+    background-color:rgba(255,255,255,);
+    font-family:'PT Sans Caption',sans-serif;
+    margin 5px;
+    color:#aaaaaa;
+    width:100%;
+    background-image: url(../images/1024px-Neuschwanstein_Castle_2.jpg);
+    padding-top:190px;
+    background-repeat: no-repeat;
+    border-bottom:4px solid rgba(255,0,0,0.8);
+    
+}
+
+#main{
+    background-color: rgba(255,255,255,1);
+    width:860px;
+    min-height:500px;
+    border-bottom:4px solid rgba(255,255,0,0.8); 
+    clear:both;
+    padding:20px 50px;
+    border-top:4px solid rgba(255,255,0,0.8);
+    
+}
+#main ul{
+    list-style: url(../images/germany-icon.png);
+    padding-left:100px; 
+    padding-bottom:20px;
+}
+.menuicon{
+    height:50px;
+    width:50px;
+    background-image: url(../images/menu.png);
+    float:left;
+    display:inline-block;
+    position:relative;
+    margin-left:20px;
+}
+.menuicon:hover{
+    background-image: url(../images/menu2.png);
+    box-shadow: 0px 0px 5px 2px rgba(255, 0, 0, 0.8);
+    
+    
+    
+}
+
+.inline-block{
+    display:inline-block;
+    float:left;
+}
+.aligntop{
+    vertical-align:top;
+}
+.container-padding{
+    padding:15px;
+}
+
+/* Bubble with an isoceles triangle
+------------------------------------------ */
+
+.triangle-isosceles {
+  display:inline-block;
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  text-shadow:2px 2px 5px #fff;
+  font-weight:bold;
+  background: #f3961c;
+  border-radius: 10px;
+  width:50%;
+  top:80px;
+  background-image: radial-gradient(circle,#eeeeee, #f3961c );
+  z-index: 1;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);    
+}
+
+/* creates triangle */
+.triangle-isosceles:before {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  top: 50px;
+  left: -35px;
+  width: 0;
+  border-width: 20px 35px 20px 0;
+  border-style: solid;
+  border-color:transparent #f3961c ;
+}
+.italics{
+    font-style: italic;
+}
+.left{
+    left:5;
+    position:relative;
+}
+.over{
+    position:relative;
+    margin:auto;
+    background-color:rgba(140,0,26,0.9);
+    /*text-shadow:2px 2px #000;*/
+    color:#fff;
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    width:600px;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    border:5px solid #000;
+    border-radius:13px 13px 0 0;
+}
+.over p{
+    margin:0 0 15px 0;
+    background-image:linear-gradient(to top, #000, #8c001a, #000);
+    border-radius:9px 9px 0 0;
+    /*background-color:rgba(0,0,0,0.5);*/
+}
+.block{
+    display:block;
+}
+.pictborder{
+    border:10px solid rgba(140,0,26,0.9);
+    margin:50px;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+}
+.clearfix{
+    clear:both;
+}
+.view {
+    width: 400px;
+    height: 400px;
+    margin:5px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    border:solid 10px rgba(140,0,26,1);
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.view .mask, .view .content {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view img {
+    display: block;
+    position: relative;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 10px 20px;
+    text-align: center;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    width:33%;
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.view-tranform img { 
+	transform: scaleY(0.5);
+	transition: all 0.7s ease-in-out;
+}
+.view-transform .mask { 
+    background-color: rgba(255, 231, 179, 0.3); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}	
+.view-transform h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view-transform p {
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view-transform a.info { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
+.view-transform:hover img { 
+	transform: scale(10);
+    opacity: 0;
+}
+.view-transform:hover .mask { 
+	opacity: 1;
+}																			 
+.view-transform:hover h2,
+.view-transform:hover p,
+.view-transform:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
+}
+.vertically-align {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-485px;
+    margin-top:-360px;
+}
+.bottom-align{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+   
+}

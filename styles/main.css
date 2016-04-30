@@ -197,12 +197,15 @@ body{
     color:#aaaaaa;
     }
 #menubar{
+    display:table-inline;
     width:100%;
     background-color: rgba(0,0,0,0.6);
     text-align:right;
     height:50px;
     line-height: 50px;
     color:#bbb;
+    /*position:absolute;
+    bottom:-25px;*/
 }
 
 #menubar li{
@@ -211,7 +214,6 @@ body{
     text-align: center;
     vertical-align: middle;
     color:#888;
-    
 
 }
 #menubar li:hover{
@@ -231,6 +233,7 @@ body{
     padding-top:190px;
     background-repeat: no-repeat;
     border-bottom:4px solid rgba(255,0,0,0.8);
+    position:relative;
     
 }
 
@@ -257,6 +260,7 @@ body{
     display:inline-block;
     position:relative;
     margin-left:20px;
+    z-index:5;
 }
 .menuicon:hover{
     background-image: url(../images/menu2.png);

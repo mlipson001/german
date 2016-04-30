@@ -1,0 +1,41 @@
+body{
+    background-image:url(../images/Wallpaper.dark.jpg);
+    color:#ddd;
+}
+
+#header{
+    background-image: url(../images/brandenburger-tor.jpg);
+
+}
+#main{
+    background-color: rgba(20,20,20,1);
+    
+    
+}
+#main a{
+    text-shadow: 1px 1px rgba(150,150,150,0.25);
+}
+#menubar{
+    background-color: rgba(255,255,255,0.4);
+    color:#666;
+}
+
+#menubar li{
+    color:#000;
+    
+
+}
+#menubar li:hover{
+    background-color:rgba(0,0,0,0.6);
+    color:#fff;
+}
+#footer a{
+    color:#888888;
+}
+#footer a:hover{
+    color:#000000;
+}
+#footer{
+    background-color: rgba(255,255,255,0.8);
+    color:#888888;
+    }

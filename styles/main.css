@@ -82,10 +82,12 @@ h3{
 
 a{
     text-decoration:none;
+}
+#main a{
     color:#900;
     text-shadow: 1px 0px rgba(0,0,0,0.75);
 }
-a:hover{
+#main a:hover{
     color:#ee4433;
 }
 
@@ -220,7 +222,7 @@ body{
 
 #header{
     border-bottom: 2px solid;
-    background-color:rgba(255,255,255,);
+    background-color:rgba(255,255,255,1);
     font-family:'PT Sans Caption',sans-serif;
     margin 5px;
     color:#aaaaaa;

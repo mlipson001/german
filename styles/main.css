@@ -197,22 +197,23 @@ body{
     color:#aaaaaa;
     }
 #menubar{
-    display:table-inline;
+    display: table;
+    display:inline-block;
     width:100%;
     background-color: rgba(0,0,0,0.6);
     text-align:right;
     height:50px;
     line-height: 50px;
     color:#bbb;
-    /*position:absolute;
-    bottom:-25px;*/
+    position:absolute;
+    bottom:0px;
 }
 
 #menubar li{
     display:table-cell;
     width:200px;
     text-align: center;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     color:#888;
 
 }
@@ -256,10 +257,9 @@ body{
     height:50px;
     width:50px;
     background-image: url(../images/menu.png);
-    float:left;
-    display:inline-block;
     position:relative;
     margin-left:20px;
+    vertical-align:bottom;
     z-index:5;
 }
 .menuicon:hover{
